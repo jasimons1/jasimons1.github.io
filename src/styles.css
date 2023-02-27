@@ -58,13 +58,21 @@ h1, h2, h3 {
     color: #bb7001;
 }
 
-.home {
+.container {
+    display: flex;
     justify-content: space-between;
     align-items: stretch;
 }
 
+.home {
+    align-items: center;
+}
+
+.lotr {
+    align-items: center;
+}
+
 .slider {
-    float: right;
     margin-right: 12rem;
     margin-top: 2rem;
     width: 50%;
@@ -73,14 +81,12 @@ h1, h2, h3 {
 
 .sliderContent {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .sliderContent img {
-    display: flex;
     width: 200%;
     max-height: 100%;
 }
@@ -88,11 +94,11 @@ h1, h2, h3 {
 .sliderControls {
     position: absolute;
     top: 50%;
-    transform: translate(-27%, -50%);
+    transform: translate(-3.5%, -50%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 218%;
+    width: 215%;
 }
 
 .sliderControls img:hover {
@@ -107,7 +113,6 @@ h1, h2, h3 {
 
 
 .text {
-    float: left;
     width: 35rem;
     margin-left: 7rem;
     text-align: justify;
