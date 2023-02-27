@@ -125,4 +125,34 @@ h1, h2, h3 {
     font-family: "Verdana", sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 95%;
+        margin: 1rem;
+    }
+
+    .slider {
+        margin: 2rem;
+        width: 80%;
+    }
+
+    .sliderContent {
+        width: 200%;
+    }
+
+    .sliderContent img {
+        width: 60%;
+    }
+
+    .sliderControls {
+        width: 135%;
+        transform: translate(-5.5%, -50%);
+        justify-content: space-between;
+    }
+}
+
 
