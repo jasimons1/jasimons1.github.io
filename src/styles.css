@@ -146,12 +146,12 @@ h1, h2, h3 {
     }
 
     .sliderContent img {
-        width: 60%;
+        width: 65%;
     }
 
     .sliderControls {
-        width: 135%;
-        transform: translate(-5.5%, -50%);
+        width: 141.5%;
+        transform: translate(-4%, -50%);
         justify-content: space-between;
     }
 }
