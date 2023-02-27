@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7d4fbc12.css",
+    "main.js": "/static/js/main.36de7981.js",
+    "static/media/eyeOfSauron.gif": "/static/media/eyeOfSauron.3283684591053134baac.gif",
+    "static/media/erebor.jpg": "/static/media/erebor.d8e03bb431916971bd39.jpg",
+    "static/media/openDoor.jpg": "/static/media/openDoor.52da405bd3ad64515ffb.jpg",
+    "static/media/baradDur.png": "/static/media/baradDur.09e1f4df1eb11539ea83.png",
+    "static/media/smaug.jpg": "/static/media/smaug.0b540f3b94adb09eed9b.jpg",
+    "static/media/fellowship.jpg": "/static/media/fellowship.408769d2a3349dff4a08.jpg",
+    "static/media/dolGuldur.jpg": "/static/media/dolGuldur.4ea4e078165669132081.jpg",
+    "static/media/argonath.jpg": "/static/media/argonath.6657f43726718a157f30.jpg",
+    "static/media/minasTirith.jpg": "/static/media/minasTirith.e5620c3c2f07235f8101.jpg",
+    "static/media/ring.jpg": "/static/media/ring.d8e77dd8b00368a9002e.jpg",
+    "index.html": "/index.html",
+    "main.7d4fbc12.css.map": "/static/css/main.7d4fbc12.css.map",
+    "main.36de7981.js.map": "/static/js/main.36de7981.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d4fbc12.css",
+    "static/js/main.36de7981.js"
+  ]
+}
