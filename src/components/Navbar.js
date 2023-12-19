@@ -6,8 +6,8 @@ export default function Navbar() {
         <nav className="nav">
             <div><img className="navGif" src={sauronGif} alt="sauronGif"/></div>
             <ul>
-                <CustomLink to="/">The Hobbit</CustomLink>
-                <CustomLink to="/lotr">The Lord of the Rings</CustomLink>
+                <CustomLink to="/">Play - The All Seeing Eye</CustomLink>
+                <CustomLink to="/leaderboard">Leaderboard</CustomLink>
             </ul>
         </nav>
     )

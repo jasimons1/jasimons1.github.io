@@ -61,7 +61,7 @@ h1, h2, h3 {
 .container {
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: stretch;
 }
 
@@ -112,6 +112,30 @@ h1, h2, h3 {
     text-align: center;
 }
 
+.theAllSeeingEye {
+    margin-left: 7rem;
+}
+
+.quizContainer {
+    font-family: "Viner Hand ITC", sans-serif;
+    color: beige;
+}
+
+.userInputField {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: beige;
+}
+
+.welcomeText {
+    margin-bottom: 5rem;
+}
+
+.label {
+    color: beige;
+    margin-right: 2rem;
+    margin-left: 8rem;
+}
 
 .text {
     width: 35rem;

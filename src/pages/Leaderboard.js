@@ -1,10 +1,10 @@
-import ImageSlider from "../ui/ImageSlider";
+import ImageSlider from "../components/ImageSlider";
 import fellowship from "../images/fellowship.jpg"
 import argonath from "../images/argonath.jpg"
 import minasTirith from "../images/minasTirith.jpg"
 import baradDur from "../images/baradDur.png";
 
-export default function Lotr() {
+export default function Leaderboard() {
 
     const sliderImages = [
         {image: fellowship, caption: "The image is unavailable"},
@@ -16,7 +16,7 @@ export default function Lotr() {
     return (
         <div>
             <div className="lotr">
-                <h1 className="title">The Lord of the Rings</h1>
+                <h1 className="title">Leaderboard</h1>
                 <div className="container">
                     <div className="text">
                         <p>

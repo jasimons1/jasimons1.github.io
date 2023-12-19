@@ -1,0 +1,436 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Aragorn",
+      "traits": [
+        "Human",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Dúnedain Ranger",
+        "Romantic interest of Arwen",
+        "Known as Strider",
+        "Narsil/Anduril",
+        "High King of Gondor",
+        "Good"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Frodo",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Cousin of Bilbo",
+        "The Shire",
+        "Sting",
+        "Bag End",
+        "Bearer of the One Ring",
+        "Lost a finger",
+        "Stabbed by Witch-King",
+        "Goes into Mordor",
+        "Goes to the Undying Lands",
+        "Last name: Baggins",
+        "Good"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sam",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Bearer of the One Ring",
+        "The Shire",
+        "Gardener",
+        "Goes into Mordor",
+        "Last name: Gamgee",
+        "Good"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pippin",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "The Shire",
+        "Tookland",
+        "Fool",
+        "Guard of the Citadel",
+        "Best friend: Merry",
+        "Friends with Treebeard",
+        "Last Name: Took",
+        "Captured",
+        "Good"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Merry",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "The Shire",
+        "Buckland",
+        "Esquire of Rohan",
+        "Best friend: Pippin",
+        "Friends with Treebeard",
+        "Captured",
+        "Stabs Witch-King",
+        "Good"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bilbo",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "The Shire",
+        "Bag end",
+        "Uncle of Frodo",
+        "Bearer of the One Ring",
+        "Willingly gives up the One Ring",
+        "Defeats Gollum in game",
+        "Rivendell",
+        "The Lonely Mountain",
+        "Dragon",
+        "Good"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Gandalf",
+      "traits": [
+        "Wizard",
+        "Male",
+        "Maia",
+        "Staff",
+        "Captured",
+        "Ring of Power: Narya",
+        "Member of the Fellowship of the Ring",
+        "Defeats Balrog",
+        "Dies",
+        "Resurrected",
+        "Mithrandir",
+        "Gandalf the White",
+        "Gandalf the Grey",
+        "Good"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Legolas",
+      "traits": [
+        "Elf",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Mirkwood",
+        "Bow and arrow",
+        "Pointy ears",
+        "They're taking the Hobbits to Isengard",
+        "Best friend: Gimli",
+        "Good"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Boromir",
+      "traits": [
+        "Human",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Minas Tirith",
+        "Gondor",
+        "Sword",
+        "Brother of Faramir",
+        "Eldest son of Denethor",
+        "Tries to take the ring from Frodo",
+        "Dies",
+        "Killed with arrows",
+        "Horn of Gondor",
+        "Good"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Faramir",
+      "traits": [
+        "Human",
+        "Male",
+        "Youngest son of Denethor",
+        "Brother of Boromir",
+        "Gondor",
+        "Minas Tirith",
+        "Resists the temptation of the One Ring",
+        "Romantic interest of Eowyn",
+        "Ranger of Ithilien",
+        "Good"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Denethor",
+      "traits": [
+        "Human",
+        "Male",
+        "Gondor",
+        "Minas Tirith",
+        "Steward of Gondor",
+        "Father of Boromir",
+        "Father of Faramir",
+        "Disgusting eater",
+        "Palantir",
+        "Dies",
+        "Good"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Gimli",
+      "traits": [
+        "Dwarf",
+        "Male",
+        "Member of the Fellowship of the Ring",
+        "Erebor",
+        "Moria",
+        "Axe",
+        "Son of Gloin",
+        "Best friend: Legolas",
+        "Good"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Elrond",
+      "traits": [
+        "Elf",
+        "Male",
+        "Ring of Power: Vilya",
+        "Rivendell",
+        "Wise",
+        "Father of Arwen",
+        "Fought in the Last Alliance",
+        "Good"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Galadriel",
+      "traits": [
+        "Elf",
+        "Female",
+        "Ring of Power: Nenya",
+        "Lothlórien",
+        "Romantic interest of Celeborn",
+        "Offers gifts to the Fellowship",
+        "Good"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Celeborn",
+      "traits": [
+        "Elf",
+        "Male",
+        "Romantic interest of Galadriel",
+        "Lothlórien",
+        "Good"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Arwen",
+      "traits": [
+        "Elf",
+        "Female",
+        "Romantic interest of Aragorn",
+        "Daughter of Elrond",
+        "Chooses mortality",
+        "Rivendell",
+        "Takes Frodo to Rivendell",
+        "Good"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Saruman",
+      "traits": [
+        "Maia",
+        "Wizard",
+        "Staff",
+        "the White",
+        "Isengard",
+        "Palantir",
+        "Allied to Sauron",
+        "Uruk-Hai",
+        "Evil"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Sauron",
+      "traits": [
+        "Maia",
+        "Dark Lord",
+        "Creator of the One Ring",
+        "The Great Eye",
+        "Palantir",
+        "Mordor",
+        "Barad-dur",
+        "Dies",
+        "Defeated after the One Ring is destroyed",
+        "Evil"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Gollum",
+      "traits": [
+        "Hobbit",
+        "Male",
+        "Misty Mountains",
+        "Bearer of the One Ring",
+        "Smeagol",
+        "Loses game to Bilbo",
+        "Guide to Frodo and Sam",
+        "Dies",
+        "Captured",
+        "Goes into Mordor",
+        "Evil"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Witch-King",
+      "traits": [
+        "Male",
+        "Ringwraith",
+        "Angmar",
+        "Servant of Sauron",
+        "Leader of the Nazgûl",
+        "Corrupted by a Ring of Power",
+        "Defeated by Merry and Eowyn",
+        "Stabs Frodo",
+        "Flying Fell beast",
+        "Evil"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Eowyn",
+      "traits": [
+        "Human",
+        "Female",
+        "Rohan",
+        "Shieldmaiden",
+        "Sister of Eomer",
+        "Niece of Theoden",
+        "Disguises herself as a man",
+        "Slays the Witch-King",
+        "Good"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Eomer",
+      "traits": [
+        "Human",
+        "Male",
+        "Brother of Eowyn",
+        "Nephew of Theoden",
+        "King of Rohan",
+        "Banished from Rohan",
+        "Good"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Theoden",
+      "traits": [
+        "Human",
+        "Male",
+        "King of Rohan",
+        "Under influence of Saruman",
+        "Under influence of Grima Wormtongue",
+        "Uncle of Eomer",
+        "Uncle of Eowyn",
+        "Dies",
+        "Good"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Grima Wormtongue",
+      "traits": [
+        "Human",
+        "Male",
+        "Rohan",
+        "Influences Theoden",
+        "Banishes Eomer",
+        "Banished from Rohan",
+        "Allied with Saruman",
+        "Dies",
+        "Evil"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Haldir",
+      "traits": [
+        "Elf",
+        "Male",
+        "Lothlórien",
+        "Helms Deep",
+        "Dies",
+        "Good"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Treebeard",
+      "traits": [
+        "Ent",
+        "Male",
+        "Fangorn",
+        "Shepherd of the forest",
+        "Leads the Ents to Isengard",
+        "Friends with Merry",
+        "Friends with Pippin",
+        "Good"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Shelob",
+      "traits": [
+        "Spider",
+        "Cirith Ungol",
+        "Mordor",
+        "Defeated by Sam",
+        "Paralyzes Frodo",
+        "Evil"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Balrog",
+      "traits": [
+        "Maia",
+        "Moria",
+        "Destroyed by Gandalf",
+        "Servant of Morgoth",
+        "Flames",
+        "Fire whip",
+        "Dies",
+        "Evil"
+      ]
+    }
+  ]
+}
+
