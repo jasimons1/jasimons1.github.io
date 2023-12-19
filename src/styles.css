@@ -133,17 +133,35 @@ h1, h2, h3 {
 }
 
 .playButton {
-    margin-left: 2rem;
-    padding: 5px;
-    width: 100px;
-}
-
-.questions h2 {
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 2.1rem;
     text-align: center;
 }
 
-.questions input{
+.playButton #play {
+    width: 150px;
+    padding: 10px;
+}
+
+.welcomeText {
+    margin-bottom: 10rem;
+}
+
+.label {
+    color: beige;
+    margin-right: 2rem;
+    margin-left: 5rem;
+}
+
+.questions {
+    margin-left: 5rem;
+}
+
+.questions h2 {
+    text-align: center;
+}
+
+.questions input {
     font-family: "Viner Hand ITC", sans-serif;
     width: 500px;
     word-wrap: break-word;
@@ -153,18 +171,24 @@ h1, h2, h3 {
     color: beige;
     font-size: 16px;
     margin-top: 5rem;
-    margin-left: 5rem;
-
 }
 
-.welcomeText {
-    margin-bottom: 5rem;
+.answerButtons {
+    margin-top: 5rem;
+    text-align: center;
 }
 
-.label {
-    color: beige;
-    margin-right: 2rem;
-    margin-left: 8rem;
+.answerButtons button {
+    width: 150px;
+    padding: 10px;
+}
+
+.answerButtons #yes {
+    margin-right: 3rem;
+}
+
+.answerButtons #no {
+    margin-left: 3rem;
 }
 
 .text {

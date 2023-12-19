@@ -18,8 +18,11 @@ const UsernameInput = ({ setUsername, setRandomQuestion }) => {
             <form onSubmit={handleSubmit}>
                 <label className="label">Enter your username:</label>
                 <input className="inputField" type="text" value={inputValue} onChange={handleInputChange} />
-                <button className="playButton" type="submit">Play</button>
+                <div className="playButton">
+                    <button id="play" type="submit">Play</button>
+                </div>
             </form>
+
         </div>
     )
 }

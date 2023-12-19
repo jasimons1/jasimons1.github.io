@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import UsernameInput from "../components/UsernameInput"
 import questionsData from "../json/questions.json"
 
@@ -7,9 +7,15 @@ import eyeOfSauron from "../images/eyeOfSauron.png"
 export default function TheAllSeeingEye() {
     const [username, setUsername] = useState('')
     const [randomQuestion, setRandomQuestion] = useState(null)
+    const [userAnswer, setUserAnswer] = useState(null)
+    const [excludedIDs, setExcludedIDs] = useState(Array.from({length: 28 }, (_, index) => index + 27))
+
+    useEffect(() => {
+        getRandomQuestion()
+    }, [])
 
     const getRandomQuestion = () => {
-        const excludedIDs = Array.from({length: 28 }, (_, index) => index + 27);
+
         const filteredQuestions = questionsData.questions.filter(
             (question) => !excludedIDs.includes(question.id)
         )
@@ -17,6 +23,18 @@ export default function TheAllSeeingEye() {
         const randomIndex = Math.floor(Math.random() * filteredQuestions.length)
         const question = filteredQuestions[randomIndex]
         setRandomQuestion(question)
+        setUserAnswer(null)
+    }
+
+    const handleAnswer = (answer) => {
+        setUserAnswer(answer)
+
+        if (excludedIDs.length > 0) {
+            const updatedExcludedIDs = [...excludedIDs]
+            updatedExcludedIDs.shift()
+            setExcludedIDs(updatedExcludedIDs)
+        }
+        getRandomQuestion()
     }
 
     return (
@@ -35,6 +53,10 @@ export default function TheAllSeeingEye() {
                                 {randomQuestion && (
                                     <>
                                         <input type="text" value={randomQuestion.text} readOnly />
+                                        <div className="answerButtons">
+                                            <button id="yes" onClick={() => handleAnswer('Yes')}>Yes</button>
+                                            <button id="no" onClick={() => handleAnswer('No')}>No</button>
+                                        </div>
                                     </>
                                 )}
                             </div>
