@@ -1,41 +1,62 @@
-import React, { useState, useEffect } from 'react'
-import UsernameInput from "../components/UsernameInput"
-import questionsData from "../json/questions.json"
-
-import eyeOfSauron from "../images/eyeOfSauron.png"
+import React, { useState, useEffect } from 'react';
+import UsernameInput from '../components/UsernameInput';
+import eyeOfSauron from '../images/eyeOfSauron.png';
 
 export default function TheAllSeeingEye() {
-    const [username, setUsername] = useState('')
-    const [randomQuestion, setRandomQuestion] = useState(null)
-    const [userAnswer, setUserAnswer] = useState(null)
-    const [excludedIDs, setExcludedIDs] = useState(Array.from({length: 28 }, (_, index) => index + 27))
+    const [username, setUsername] = useState('');
+    const [randomQuestion, setRandomQuestion] = useState(null);
+    const [userAnswer, setUserAnswer] = useState(null);
 
     useEffect(() => {
-        getRandomQuestion()
-    }, [])
+        getRandomQuestion();
+    }, []);
 
-    const getRandomQuestion = () => {
+    const getRandomQuestion = async () => {
+        try {
+            const response = await fetch('http://127.0.0.1:5000/get_question');
+            const data = await response.json();
 
-        const filteredQuestions = questionsData.questions.filter(
-            (question) => !excludedIDs.includes(question.id)
-        )
-
-        const randomIndex = Math.floor(Math.random() * filteredQuestions.length)
-        const question = filteredQuestions[randomIndex]
-        setRandomQuestion(question)
-        setUserAnswer(null)
-    }
-
-    const handleAnswer = (answer) => {
-        setUserAnswer(answer)
-
-        if (excludedIDs.length > 0) {
-            const updatedExcludedIDs = [...excludedIDs]
-            updatedExcludedIDs.shift()
-            setExcludedIDs(updatedExcludedIDs)
+            if (response.ok) {
+                setRandomQuestion(data.question);
+                setUserAnswer(null);
+            } else {
+                console.error('Failed to retrieve question');
+            }
+        } catch (error) {
+            console.error('Error fetching question:', error);
         }
-        getRandomQuestion()
-    }
+    };
+
+    const handleAnswer = async (answer) => {
+        setUserAnswer(answer);
+
+        try {
+            const response = await fetch('http://127.0.0.1:5000/update_model', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    user_answer: answer,
+                    current_question: {
+                        id: randomQuestion.id,
+                        text: randomQuestion.text,
+                        traits: randomQuestion.traits,
+                        user_response: answer,
+                    },
+                }),
+            });
+
+            if (!response.ok) {
+                console.error('Failed to update model');
+            }
+        } catch (error) {
+            console.error('Error updating model:', error);
+        }
+
+        await getRandomQuestion();
+    };
+
 
     return (
         <div className="home">
@@ -48,18 +69,22 @@ export default function TheAllSeeingEye() {
                     <div className="userInputField">
                         {username ? (
                             <>
-                            <div className="questions">
-                                <h2>Welcome {username}!</h2>
-                                {randomQuestion && (
-                                    <>
-                                        <input type="text" value={randomQuestion.text} readOnly />
-                                        <div className="answerButtons">
-                                            <button id="yes" onClick={() => handleAnswer('Yes')}>Yes</button>
-                                            <button id="no" onClick={() => handleAnswer('No')}>No</button>
-                                        </div>
-                                    </>
-                                )}
-                            </div>
+                                <div className="questions">
+                                    <h2>Welcome {username}!</h2>
+                                    {randomQuestion && (
+                                        <>
+                                            <input type="text" value={randomQuestion.text} readOnly />
+                                            <div className="answerButtons">
+                                                <button id="yes" onClick={() => handleAnswer('Yes')}>
+                                                    Yes
+                                                </button>
+                                                <button id="no" onClick={() => handleAnswer('No')}>
+                                                    No
+                                                </button>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
                             </>
                         ) : (
                             <>
@@ -73,5 +98,5 @@ export default function TheAllSeeingEye() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
