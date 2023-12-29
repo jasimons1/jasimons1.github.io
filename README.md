@@ -1,1 +1,1 @@
-# Een ReactJS web applicatie met twee paginas met een imageslider
+# Ja / Nee spel met Lord of the Rings karakters
